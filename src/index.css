@@ -16,3 +16,8 @@ code {
   font-family: 'CrimeFighter BB';
   src: local('CrimeFighter BB'), url(./CRIMFBRG.TTF) format('truetype');
 }
+
+@font-face {
+  font-family: 'Komika Title';
+  src: local('Komika Title'), url(./KomikaTitle-Paint.ttf) format('truetype');
+}

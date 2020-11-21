@@ -1,53 +1,198 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&display=swap');
 
+* {
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
 
 .App {
   overflow-x: hidden;  
-  background-image: linear-gradient(to right, indigo, blue);
+}
+#container-frames {
+  width: 100%;
+  /* background-color: aqua; */
+  display: flex;
+  align-items: flex-start;
+}
+#title {
+  font-family: 'Komika Title', cursive;
+  font-size: 6vw;
+  margin-bottom: -8vw;
+  text-align: center;
+  color: darkslateblue;
+}
+
+#frame {
+  position: relative;
+  background-image: linear-gradient(to top, rgb(3, 120, 245), rgb(160, 199, 237));
+  width: 30vw;
+  height: 30vw;
+  margin: 8vw 1vw 1vw 2vw;
+  border: 0.5vw rgba(41, 40, 40, 0.94) solid;
+  border-radius: 0.5%;
+  display: inline-flex;
+}
+#frame2 {
+  position: relative;
+  background-image: linear-gradient(to top, rgba(249, 238, 115, 0.842), rgb(255, 119, 0));
+  width: 60vw;
+  height: 30vw;
+  margin: 8vw 1vw 1vw 2vw;
+  border: 0.5vw rgba(41, 40, 40, 0.94) solid;
+  border-radius: 0.5%;
+  display: inline-flex;
+  align-items: flex-end;
+  padding: 0;
+}
+
+#box1 {
+  background-color: rgb(55, 54, 54);
+  width: 5vw;
+  height: 10vw;
+  margin: -1px;
+}
+#box2 {
+  background-color: rgb(55, 54, 54);
+  width: 7vw;
+  height: 8vw;
+  margin: -1px;
+}
+#box3 {
+  background-color: rgb(55, 54, 54);
+  width: 6vw;
+  height: 15vw;
+  margin: -1px;
+}
+#box4 {
+  background-color: rgb(55, 54, 54);
+  width: 2vw;
+  height: 7vw;
+  margin: -1px;
+}
+#box5 {
+  background-color: rgb(55, 54, 54);
+  width: 10vw;
+  height: 12vw;
+  margin: -1px;
+}
+#box6 {
+  background-color: rgb(55, 54, 54);
+  width: 7vw;
+  height: 18vw;
+  margin: -1px;
+}
+#box7 {
+  background-color: rgb(55, 54, 54);
+  width: 6vw;
+  height: 12vw;
+  margin: -1px;
+}
+#box8 {
+  background-color: rgb(55, 54, 54);
+  width: 6vw;
+  height: 14vw;
+  margin: -1px;
+}
+#box9 {
+  background-color: rgb(55, 54, 54);
+  width: 9vw;
+  height: 11vw;
+  margin: -1px;
+}
+#box10 {
+  background-color: rgb(55, 54, 54);
+  width: 5vw;
+  height: 13vw;
+  margin: -1px;
+}
+.w {
+  width: 1vw;
+  height: 1vw;
+  background-color: ivory;
+  float: right;
+  margin: 0.4vw;
 }
 
 #container {
   display: flex;  
-  margin: 60px 20px;
-  
+  margin: 5vw 1vw 1vw 3vw;
+  position: absolute;
+}
+#avatar-container {
+  -webkit-animation: avatar-enters-page 2s ease-in forwards;
+    -moz-transition: avatar-enters-page 2s ease-in forwards;
+      -o-transition: avatar-enters-page 2s ease-in forwards;
+          animation: avatar-enters-page 2s ease-in forwards;
+  z-index: 98;
 }
 
 #avatar {
-  animation: components-enter-page 1s ease-in forwards;
+  -webkit-animation: move-up-and-down 1s infinite  alternate;
+    -moz-transition: move-up-and-down 1s infinite  alternate;
+      -o-transition: move-up-and-down 1s infinite  alternate;
+          animation: move-up-and-down 1s infinite  alternate;
   border-radius: 100%;
-  border: 10px orange solid;
+  border: 1.5vw orange solid;
   width: 20vw;
   height: 20vw;
   position: relative;
   margin-top: 10vw;
+  z-index: 99;
 }
 
 #balloon {
-  animation: baloon-enter-page 1s ease-in forwards;
-  width: 60vw;
+  -webkit-animation: baloon-enter-page 2s ease-in forwards;
+  animation: baloon-enter-page 2s ease-in forwards;
   height: 20vw;
+  width: 60vw;
   margin: 0vw -13vw;
   float: right;
   position: relative;
   z-index: 100;
+  
+}
+#balloon2 {
+  height: 200px;
+  width: 700px;
 }
 #balloon-text {
-  animation: baloon-enter-page 1s ease-in forwards;
-  width: 40vw;
+  -webkit-animation: baloon-enter-page 2s ease-in forwards;
+  animation: baloon-enter-page 2s ease-in forwards;
+  width: 46vw;
   height: 30vw;
-  margin-left: -37vw;
+  margin-left: -39vw;
   margin-top: 3vw;
-  font-size: 2.2vw;
+  font-size: 2.0vw;
   font-family: 'CrimeFighter BB', cursive;
   z-index: 200;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
-@keyframes components-enter-page {
+@-webkit-keyframes avatar-enters-page {
   0% {
     transform: translateX(-100%) translateY(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes avatar-enters-page {
+  0% {
+    transform: translateX(-100%) translateY(-100%);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes baloon-enter-page {
+  0% {
+    transform: translateX(200%) translateY(-100%);
   }
   100% {
     transform: translate(0);
@@ -61,4 +206,14 @@
   100% {
     transform: translate(0);
   }
+}
+
+
+@-webkit-keyframes move-up-and-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+@keyframes move-up-and-down {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
 }
