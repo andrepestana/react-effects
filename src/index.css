@@ -21,3 +21,8 @@ code {
   font-family: 'Komika Title';
   src: local('Komika Title'), url(./KomikaTitle-Paint.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Agent Red';
+  src: local('Agent Red'), url(./AGENTRED.TTF) format('truetype');
+}
