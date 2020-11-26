@@ -1,0 +1,36 @@
+.frame3 {
+    position: relative;
+    height: 30vw;
+    width: 60vw;
+    border: 0.5vw rgba(41, 40, 40, 0.94) solid;
+    border-radius: 255px 4px 255px 15px/8px 225px 6px 255px;
+    margin: 2vw;
+    /* background: #f9e406;
+    filter: contrast(7);
+    --mask: linear-gradient(red, rgba(0, 0, 0, 0.45));
+    padding: 0;
+    overflow: hidden;
+     */
+  }
+  
+  /* .frame3::before {
+    position: absolute;
+    top: -11vw;
+    right: -5vw;
+    bottom: -16vw;
+    left: -8vw;
+    margin: 1vw 1vw 1vw 2vw;
+    background: radial-gradient(rgb(69, 59, 8), transparent) 0 0/1em 1em space;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    content: "";
+    transform: rotate(18deg);
+  } */
+
+  #projects {
+      background: url(./pow_projects.svg);
+      height: 30vw;
+      width: 30vw;
+      background-position: center;
+      background-size: 100% 100%;
+  }

@@ -1,0 +1,53 @@
+#character-name {
+    font-family: 'Komika Title', cursive;
+    font-size: 2.5vw;
+    margin-top: 6vw;
+    margin-bottom: -10vw;
+    margin-left: 2vw;
+    text-align: center;
+    text-shadow: 4px 4px 2px rgb(122, 107, 201);
+    color: rgb(232, 62, 32);
+    letter-spacing: 0;
+    line-height: 3.5vw;
+    width: 20%;
+    -ms-transform: rotate(-4deg); /* IE 9 */
+    transform: rotate(-4deg);
+    /* background-color: #e9ce03; */
+    background: url(./pow.png);
+    background-size: 100% 100%;
+    background-position: center; 
+    height: 12vw;
+    padding-top: 3vw;
+  }
+  #in-div {
+    position: relative;
+    font-family: 'Komika Title', cursive; 
+    font-size: 1.5vw;
+    vertical-align: middle;
+    margin-top: 8vw;
+    margin-bottom: -6vw;
+  }
+  
+  #title {
+    font-family: 'Komika Title', cursive; 
+    font-size: 6.5vw;
+    margin-top: 6vw;
+    margin-bottom: -8vw;
+    text-align: center;
+    color: darkslateblue;
+    letter-spacing: -3px;
+    width: 60%;
+  }
+  
+  #subtitle {
+    font-family: 'Komika Title', cursive; 
+    font-size: 2vw;
+    font-weight: 100;
+    margin-top: 7vw;
+    margin-bottom: -8vw;
+    margin-right: 2vw;
+    text-align: center;
+    color: rgb(35, 33, 50);
+    width: 20%;
+    
+  } 
