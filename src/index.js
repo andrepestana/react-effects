@@ -1,9 +1,11 @@
+import './polyfills'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './CRIMFBRG.TTF';
+
 
 ReactDOM.render(
   <React.StrictMode>

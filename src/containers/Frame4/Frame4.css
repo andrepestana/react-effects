@@ -1,1 +1,12 @@
 
+#frame4 {
+    position: relative;
+    background-image: linear-gradient(to top, rgb(3, 133, 29), rgb(160, 237, 169));
+    width: 30vw;
+    height: 30vw;
+    margin: 2vw;
+    border: 0.5vw rgba(41, 40, 40, 0.94) solid;
+    /*border-radius: 0.5%;*/
+    border-radius: 255px 1px 225px 4px/13px 225px 9px 255px;
+    display: inline-flex;
+  }

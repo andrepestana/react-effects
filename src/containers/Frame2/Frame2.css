@@ -108,6 +108,18 @@
     position: absolute;
     bottom: 0;
     margin: -0.5vw;
+
+  }
+  #flying-saucer-container:before {
+    pointer-events: none;
+    height: 40vw;
+    width: 70vw;
+    position: absolute;
+    bottom: 0;
+    margin: -0.5vw;
+    background: url(./21.png);
+    opacity: 0.1;
+    content: ' ';
   }
   
   #wrapping-flying-saucer {

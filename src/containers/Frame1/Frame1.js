@@ -9,16 +9,17 @@ function Frame1() {
     <div id="frame">
         <div id="container">
             <div id="bubble-container">
-            <div className="bubble bubble1"></div>
-            <div className="bubble bubble2"></div>
-            <div className="bubble bubble3"></div>
-            <div className="bubble bubble4"></div>
-            <div className="bubble bubble5"></div>
-            <div className="bubble bubble6"></div>
-            <div className="bubble bubble7"></div>
+              <div className="bubble bubble1"></div>
+              <div className="bubble bubble2"></div>
+              <div className="bubble bubble3"></div>
+              <div className="bubble bubble4"></div>
+              <div className="bubble bubble5"></div>
+              <div className="bubble bubble6"></div>
+              <div className="bubble bubble7"></div>
             </div>
-            <div id="avatar-container">
-            <img id="avatar" src={avatar} alt="avatar" />
+            <div id="wrapping-up-and-down-container">
+              <div id="avatar-container">
+              </div>
             </div>
             <img id="balloon" src={balloon} alt="balloon" />
             <div id="balloon-text">
